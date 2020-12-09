@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+
+  <div class="foot">
+     <h1 class="dd ">Currency</h1>
+     <hr>
+    <div class="container">
+      <form name="myForm" action="index.html" onsubmit="return false" method="post">
+          <div class="row ">
+            <div class="col-sm-4 col-12 pt-4">
+             <label for="fname">Code <span class="text-danger">*</span></label>
+             <input type="text" class="form-control" id="fname" placeholder="code" name="fname">
+             <span id="one" class="text-danger"></span>
+            </div>
+            <div class="col-sm-4 col-12  pt-4 ">
+             <label for="fname">Name <span class="text-danger">*</span> </label>
+             <input type="text" class="form-control" id="lname" placeholder="name" name="lname">
+             <span id="two" class="text-danger"></span>
+            </div>
+            <div class="col-sm-4 col-12 pt-4 ">
+              <label for="fname">Status <span class="text-danger">*</span></label><br>
+              <select class="san">
+                <option value="">choose</option>
+                <option value="">ACTIVE</option>
+                <option value="">UNACTVE</option>
+              </select>
+            </div>
+              <div class="col-sm-4 col-12 pt-4">
+                <label for="fname">Symbel <span class="text-danger">*</span></label>
+                <input type="text" class="gg form-control" id="email" placeholder="symbel" name="email1">
+                <span id="three" class="text-danger"></span>
+               </div>
+               <div class="col-sm-4 col-12 pt-4">
+                <label for="fname">Coversion Rate(USD) <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="click" placeholder="coversion Rate(USD)" name="click">
+                <span id="five" class="text-danger"></span>
+               </div>
+               <div class="col-sm-4 col-12 pt-4 offset-md-9 justify-content-end">
+                <button type="submit"  class="btn btn-primary my-2 " onclick="gas()">Submit</button>
+                <button type="reset" class="btn btn-danger my-2">Reset</button>
+              </div>
+  
+          </div>
+      </form>
+    </div>
+    <div class="container pt-5">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Symbel</th>
+            <th>Coversion Rate(USD)</th>
+            <th>Edit/Delete</th>
+          </tr>
+        </thead>
+      <tr>
+        <tbody class="text-dark" id="body"></tbody>
+      </tr>
+      </table>
+    </div>
+  </div>
+   <script src="main.js"></script> 
+</body>
+</html>
